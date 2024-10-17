@@ -4,7 +4,7 @@ import * as useSwapOwner from '@/hooks/useUpdateOwners/useSwapOwner.js'
 import { configExistingSafe } from '@test/config.js'
 import { signerPrivateKeys } from '@test/fixtures/index.js'
 import { renderHookInMockedSafeProvider } from '@test/utils.js'
-import { createCustomMutationResult } from '@test/fixtures/mutationResult.js'
+import { createCustomMutationResult } from '@test/fixtures/mutationResult/index.js'
 import { useUpdateOwners } from './index.js'
 
 describe('useUpdateOwners', () => {

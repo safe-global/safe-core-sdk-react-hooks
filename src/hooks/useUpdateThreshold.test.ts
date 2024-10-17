@@ -6,7 +6,7 @@ import * as useSendTransaction from '@/hooks/useSendTransaction.js'
 import * as useSignerClientMutation from '@/hooks/useSignerClientMutation.js'
 import { ethereumTxHash, safeMultisigTransaction, signerPrivateKeys } from '@test/fixtures/index.js'
 import { configPredictedSafe } from '@test/config.js'
-import { createCustomMutationResult } from '@test/fixtures/mutationResult.js'
+import { createCustomMutationResult } from '@test/fixtures/mutationResult/index.js'
 import { renderHookInQueryClientProvider } from '@test/utils.js'
 import { MutationKey } from '@/constants.js'
 

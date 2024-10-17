@@ -11,7 +11,7 @@ import {
   signerPrivateKeys
 } from '@test/fixtures/index.js'
 import { configPredictedSafe } from '@test/config.js'
-import { createCustomMutationResult } from '@test/fixtures/mutationResult.js'
+import { createCustomMutationResult } from '@test/fixtures/mutationResult/index.js'
 import { renderHookInQueryClientProvider } from '@test/utils.js'
 import { MutationKey } from '@/constants.js'
 
