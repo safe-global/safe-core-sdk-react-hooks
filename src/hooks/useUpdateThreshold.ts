@@ -40,9 +40,8 @@ export function useUpdateThreshold(
     ...params,
     mutationKey: [MutationKey.UpdateThreshold],
     mutationSafeClientFn: async (signerClient, updateThresholdParams) => {
-      const updateThresholdTx = await signerClient.createChangeThresholdTransaction(
-        updateThresholdParams
-      )
+      const updateThresholdTx =
+        await signerClient.createChangeThresholdTransaction(updateThresholdParams)
       return sendTransactionAsync({ transactions: [updateThresholdTx] })
     }
   })

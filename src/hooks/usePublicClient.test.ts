@@ -52,7 +52,8 @@ describe('usePublicClient', () => {
 
     it('should create a new SafeClient client if the passed config changes', async () => {
       const { result, rerender } = renderHookInSafeProvider(
-        ({ config = configPredictedSafe }: UsePubicClientParams = {}) => usePublicClient({ config }),
+        ({ config = configPredictedSafe }: UsePubicClientParams = {}) =>
+          usePublicClient({ config }),
         { config: configExistingSafe }
       )
 
@@ -73,7 +74,8 @@ describe('usePublicClient', () => {
 
     it('should NOT create a new SafeClient client if the config param matches the one from previous render', async () => {
       const { result, rerender } = renderHookInSafeProvider(
-        ({ config = configPredictedSafe }: UsePubicClientParams = {}) => usePublicClient({ config }),
+        ({ config = configPredictedSafe }: UsePubicClientParams = {}) =>
+          usePublicClient({ config }),
         { config: configExistingSafe }
       )
 

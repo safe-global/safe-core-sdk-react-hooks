@@ -51,6 +51,7 @@ describe('useSafeInfo', () => {
   })
 
   it('should return fetch and return Safe infos using individual hooks', () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { refetch, ...expectedResult } = createCustomQueryResult({
       status: 'success',
       data: safeInfo
@@ -98,6 +99,7 @@ describe('useSafeInfo', () => {
   it('should return with loading state + partial data if any individual hook returns with loading state', async () => {
     useThresholdSpy.mockReturnValueOnce(createCustomQueryResult({ status: 'pending' }))
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { refetch, ...expectedResult } = {
       ...queryPendingResult,
       data: { ...safeInfo, threshold: undefined }
@@ -127,6 +129,7 @@ describe('useSafeInfo', () => {
     useAddressSpy.mockReturnValueOnce(queryLoadingErrorResult)
     useOwnersSpy.mockReturnValueOnce(queryLoadingErrorResult)
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { refetch, ...expectedResult } = {
       ...queryLoadingErrorResult,
       errorUpdateCount: 2,

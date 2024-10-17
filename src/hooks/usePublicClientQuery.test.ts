@@ -12,7 +12,6 @@ import { renderHookInQueryClientProvider } from '@test/utils.js'
 // "TypeError: Cannot redefine property: useQuery"
 jest.mock('@tanstack/react-query', () => ({
   __esModule: true,
-  // @ts-ignore
   ...jest.requireActual('@tanstack/react-query')
 }))
 
