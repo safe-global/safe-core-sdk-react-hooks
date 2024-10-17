@@ -4,11 +4,17 @@ A collection of React hooks to simplify the usage of the Safe Core SDK for React
 
 ## Table of Contents
 
-- Installation
-- Usage
-- Available Hooks
-- Contributing
-- License
+- [Documentation](#documentation)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available Hooks](#available-hooks)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Documentation
+
+Head to the [Safe React Hooks docs](https://docs.safe.global/reference-sdk-react-hooks/overview) to learn more about how to use these hooks.
+
 
 ## Installation
 
